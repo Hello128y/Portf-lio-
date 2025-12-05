@@ -1,10 +1,179 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8"/>
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Eduarda Soares| Técnica de Informática</title>
+    <style>
+      
+        :root {
+            --cor-principal: #7f4397;
+            --cor-fundo: #0D0D0D;
+            --cor-secundaria: #1E1E1E;
+            --cor-texto: #E0E0E0;
+            --fonte-corpo: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            font-family: var(--fonte-corpo);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header-hero {
+            background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('fundo-futurista.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--cor-principal);
+        }
+
+        .header-hero h1 {
+            font-family: var(--fonte-titulo);
+            font-size: 3em;
+            color: var(--cor-principal);
+            text-shadow: 0 0 10px var(--cor-principal);
+            margin-bottom: 10px;
+        }
+
+        .header-hero p {
+            font-size: 1.2em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-family: var(--fonte-titulo);
+            font-size: 2.5em;
+            color: var(--cor-principal);
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--cor-secundaria);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background-color: var(--cor-secundaria);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px var(--cor-principal);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--cor-principal);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-family: var(--fonte-titulo);
+            color: var(--cor-principal);
+            margin-top: 0;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--cor-principal);
+            color: var(--cor-fundo);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .card-content a:hover {
+            background-color: #A3FF8F; /* Neon mais claro */
+        }
+    </style>
 </head>
 <body>
-<p>test</p>
+
+    <header class="header-hero">
+        <h1>Comandante Xaden</h1>
+        <p>Desenvolvedor Web Full Stack & Designer de Jogos Indie | Construindo experiências digitais no front-end e no back-end.</p>
+        <div>
+            <a href="[SEU_LINK_GITHUB]" style="color: var(--cor-principal); margin: 0 15px; font-size: 1.5em;">GitHub</a>
+            <a href="[SEU_LINK_LINKEDIN]" style="color: var(--cor-principal); margin: 0 15px; font-size: 1.5em;">LinkedIn</a>
+        </div>
+    </header>
+
+    <section id="projetos" class="container">
+        <h2 class="section-title">PROJETOS EM DESTAQUE</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="[image_a36a76.png]" alt="Dashboard de Missão Espacial">
+                <div class="card-content">
+                    <h3>🪐 Space-Ops Dashboard</h3>
+                    <p>Painel de controle futurista para monitoramento de missões espaciais. Demonstra habilidades em layout complexo, visualização de dados e estética *dark mode* avançada.</p>
+                    <a href="[LINK_DO_PROJETO_1]">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="[image_a366f7.png]" alt="Aplicativo de Música Musa">
+                <div class="card-content">
+                    <h3>🎶 MUSA - Music Player Interface</h3>
+                    <p>Interface de usuário (UI) para um aplicativo de streaming de música, destacando organização de biblioteca, playlists e experiência de navegação limpa.</p>
+                    <a href="[LINK_DO_PROJETO_2]">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="[image_a3717c.jpg]" alt="Site de Viagens Partiu">
+                <div class="card-content">
+                    <h3>✈️ Partiu!!! - E-commerce de Viagens</h3>
+                    <p>Plataforma de e-commerce com foco em passagens. Destaca design de produto (cards), funcionalidades de carrinho e fluxo de compra em ambientes comerciais.</p>
+                    <a href="[LINK_DO_PROJETO_3]">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="[image_a30808.jpg]" alt="Personagem de Jogo em Plataforma">
+                <div class="card-content">
+                    <h3>💀 Reaper's Journey (Game Dev)</h3>
+                    <p>Meu projeto de jogo, demonstrando habilidades em Game Design, pixel art/gráficos e lógica de programação (Unity/Godot/etc.). Foco em plataformas 2D e ambientação sombria.</p>
+                    <a href="[LINK_DO_JOGO_OU_REPOSITORIO]">Ver Game</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="habilidades" class="container">
+        <h2 class="section-title">STACK DE TECNOLOGIAS</h2>
+        <p style="text-align: center; font-size: 1.1em;">**Frontend:** HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+), React/Vue.js. <br> **Backend:** Node.js (Express), Python (Flask/Django), SQL/NoSQL. <br> **Game Dev:** Unity/Godot, C#, Game Design Principles.</p>
+    </section>
+
+    <footer style="background-color: var(--cor-secundaria); text-align: center; padding: 20px; margin-top: 50px;">
+        <p>&copy; 2025 Comandante Xaden. Construído com paixão e código.</p>
+    </footer>
+
 </body>
 </html>
